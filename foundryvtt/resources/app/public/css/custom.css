@@ -1,0 +1,76 @@
+/* Hide game details (session appointment) */
+.vtt.players #setup #join-game .join-body .left .app:nth-of-type(2) {
+    display: none;
+  }
+  
+  /* Hide the subtitles that are identical with the text inside the buttons */
+  .vtt.players #setup #join-game .join-body .app h1 {
+    display: none;
+  }
+  
+  /* Hide the rest of the labels (player name, password etc) */
+  .vtt.players #setup #join-game .join-body .app .form-group label{
+    display: none;
+  }
+  
+  /* Hide watermark \ version number */
+  .vtt.players .watermark {
+    display: none;
+  }
+  
+  /* Hide default background textures, frames */
+  .vtt.players #setup #join-game .app {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  /* Set the layout model we'll be working with */
+  .vtt.players #setup {
+    align-items: flex-start;
+  }
+  
+  /* Center, color, resize the buttons */
+  .vtt.players #setup #join-game .join-body button {
+    margin: 0;
+    background-color: #7c2829;
+    color: white;
+    border-color: #491718;
+    height: 40px;
+  }
+  .vtt.players #setup #join-game .join-body button:hover {
+    background-color: #952f30;
+  }
+  
+  /* Set the position for the box(es).*/
+  .vtt.players #setup #join-game {
+  /* Make the box(es) hug left side */
+    margin: 50px;
+  
+  }
+  
+  /* Adjust width of boxes */
+  .left {
+    width: 300px;
+  }
+  
+  /* put world description below login boxes */
+  .join-body {
+    display: grid;
+  }
+  
+    .vtt.players #setup #join-game #world-title {
+  /* Align world name */
+    display: flex;
+  /* Unify the "title" box with the "join game session" box */
+    margin-bottom: 0;
+  }
+  
+  /* World Description text */
+  #world-description a {
+    color: var(--color-text-light-highlight);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-14);
+    text-decoration: none;
+  }
